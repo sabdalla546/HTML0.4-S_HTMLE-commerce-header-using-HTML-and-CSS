@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(245, 162, 9);
+    --socandry-color: #24252a;
+
+}
+
+/* ------------------header style -------------------*/
+header {
+    background-color: var(--socandry-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3.75rem;
+}
+
+.head {
+    padding: 1rem 1rem;
+    width: 250px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.head p {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+.fa-angle-down {
+    font-size: 12px;
+    margin-top: 0.5rem;
+}
+
+/* ------------- sub list inside head ------------------*/
+.sub-menu-cat {
+    display: none;
+
+}
+
+.head:hover .sub-menu-cat {
+    display: block;
+    position: absolute;
+    background-color: var(--socandry-color);
+    margin-top: 1rem;
+    left: 60px;
+    top: 2.65rem;
+}
+
+.head .sub-menu-cat li {
+    display: block;
+    padding: 1.5rem;
+    width: 250px;
+}
+
+.head .sub-menu-cat li:hover {
+    background-color: var(--main-color);
+    border-top: 1px solid var(--socandry-color);
+}
+
+/*----------------nav bar style ---------------*/
+.nav-links {
+    margin-left: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 1rem 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
+/* ------------------ sup list inside nav bar ----------------*/
+.sub-menu {
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: var(--socandry-color);
+    margin-top: 1rem;
+}
+
+.nav-links ul li:hover .sub-menu li {
+    display: block;
+    padding: 1.5rem;
+    width: 150px;
+}
+
+.nav-links ul li:hover .sub-menu li a {
+    color: white;
+}
+
+.nav-links ul li:hover .sub-menu li:hover {
+    background-color: var(--main-color);
+}
+
+.nav-links .active a {
+    color: var(--main-color);
+}
+
+/*------- icon style ------------*/
+.icon {
+    display: flex;
+    margin-left: auto;
+    padding: 20px 15px;
+    color: white;
+}
+
+.icon i {
+    color: var(--main-color);
+}
+
+.icon span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icon div {
+    display: inline-block;
+}
+
+.card-icon {
+    margin-left: 1rem;
+}
